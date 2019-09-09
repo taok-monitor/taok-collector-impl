@@ -9,6 +9,11 @@ import br.com.taok.collector.api.model.standard.Search;
 
 public class CollectorCeCaucaia implements Collector {
 
+	/**
+	 * 
+	 * Class to import data from CE-Caucaia
+	 * 
+	 * */
 	@Override
 	public List<CollectedLaunch> collectNow(Search search) {
 	
