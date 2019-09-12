@@ -3,11 +3,11 @@ package br.com.taok.collector.ce.fortaleza;
 import java.time.LocalDate;
 import java.util.List;
 
-import br.com.taok.collector.CollectExcepion;
-import br.com.taok.collector.ConectorAPI;
 import br.com.taok.collector.api.Collector;
 import br.com.taok.collector.api.model.standard.CollectedLaunch;
 import br.com.taok.collector.api.model.standard.Search;
+import br.com.taok.collector.exception.CollectExcepion;
+import br.com.taok.collector.util.ConectorAPI;
 
 public class CollectorCeFortaleza implements Collector {
 

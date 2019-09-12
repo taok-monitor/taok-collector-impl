@@ -3,9 +3,9 @@ package br.com.taok.collector.ce.fortaleza;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.taok.collector.CollectedLaunchBuilder;
 import br.com.taok.collector.api.model.standard.CollectedLaunch;
 import br.com.taok.collector.api.model.standard.NormalizeLaunch;
+import br.com.taok.collector.builder.CollectedLaunchBuilder;
 import br.com.taok.collector.model.CityCollected;
 import br.com.taok.collector.model.ProviderCollected;
 import br.com.taok.collector.model.PublicCompanyCollected;

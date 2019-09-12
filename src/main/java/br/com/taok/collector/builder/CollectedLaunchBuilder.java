@@ -1,4 +1,4 @@
-package br.com.taok.collector;
+package br.com.taok.collector.builder;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

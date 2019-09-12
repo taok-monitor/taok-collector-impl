@@ -1,4 +1,4 @@
-package br.com.taok.collector;
+package br.com.taok.collector.util;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;

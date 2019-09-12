@@ -1,4 +1,4 @@
-package br.com.taok.collector;
+package br.com.taok.collector.exception;
 
 public class CollectExcepion extends RuntimeException {
 

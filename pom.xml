@@ -27,6 +27,7 @@
     	<groupId>br.com.taok</groupId>
     	<artifactId>collector-api</artifactId>
     	<version>0.0.1</version>
+    	<scope>compile</scope>
     </dependency>
     
 	<dependency>  
@@ -37,7 +38,7 @@
 	
   </dependencies>
    <build>
-  	<finalName>taok-ce-fortaleza</finalName>
+  	<finalName>collector-impl</finalName>
 	   <plugins>
 	       <plugin>
 	           <groupId>org.apache.maven.plugins</groupId>

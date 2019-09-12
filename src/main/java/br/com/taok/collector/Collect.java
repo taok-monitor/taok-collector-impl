@@ -1,4 +1,4 @@
-package br.com.taok.collector.ce;
+package br.com.taok.collector;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -14,16 +14,21 @@ import br.com.taok.collector.model.ProviderCollected;
 
 /**
  * 
- * Class with responsibility of the make importation of the state Ceará
+ * Class with responsibility of the make Collections
  * 
  * */
-public class ImporterCE {
+public class Collect {
 
 	@Inject
 	@Any
 	private Instance<Collector> collectoresLazy;
 	
-	public void makeImportation() {
+	/**
+	 * 
+	 * Execute the collections and persist in databases
+	 * 
+	 * */
+	public void make() {
 		
 		LocalDate start = LocalDate.of(2019, 8, 1);
 		LocalDate end = LocalDate.of(2019, 8, 30);
