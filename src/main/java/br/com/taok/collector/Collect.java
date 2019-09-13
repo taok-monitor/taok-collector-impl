@@ -38,7 +38,7 @@ public class Collect {
 		
 		for( Collector collector : collectoresLazy ) {
 			
-			List<CollectedLaunch> collectNow = collector.collectNow(search);
+			List<CollectedLaunch> collectNow = collector.collectNow(search).launchs();
 			System.out.println(collectNow.size());
 		}
 	}

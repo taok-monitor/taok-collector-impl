@@ -10,7 +10,7 @@ import br.com.taok.collector.model.CityCollected;
 import br.com.taok.collector.model.ProviderCollected;
 import br.com.taok.collector.model.PublicCompanyCollected;
 
-public class NormalizeCeFortaleza implements NormalizeLaunch {
+class CeFortalezaNormalize implements NormalizeLaunch {
 
 	@Override
 	public List<CollectedLaunch> normalize(List<String[]> datas) {
