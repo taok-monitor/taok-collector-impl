@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import br.com.taok.collector.api.Collector;
 import br.com.taok.collector.api.model.Provider;
@@ -56,13 +57,15 @@ public class CeFortalezaCollector implements Collector {
 
 	@Override
 	public List<Provider> providers() {
-		// TODO Auto-generated method stub
-		return new ArrayList<>();
+		return this.launchs.stream()
+				.map( l -> l.getProvider())
+				.collect(Collectors.toList());
 	}
 
 	@Override
 	public BigDecimal amount() {
-		// TODO Auto-generated method stub
-		return BigDecimal.ZERO;
+		return this.launchs.stream()
+				.map(l -> l.getValue())
+				.reduce(BigDecimal.ZERO, BigDecimal::add);
 	}
 }
