@@ -40,7 +40,7 @@ Para usar teremos que criar um objeto `Search` e informar os parâmetros que des
 - StartDate
 - EndDate
 
-Vamos usar como exemplo, obter dados do portal da transparência da prefeitura de fortaleza:
+Vamos usar como exemplo obter dados do portal da transparência da prefeitura de fortaleza:
 
 - Vamos criar um `Provider` chamado Cagece (Compania de Água e esgoto do estado do CE)
 
