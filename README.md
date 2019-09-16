@@ -6,7 +6,7 @@
 
 Hoje para consumirmos dados do portal da transparência e bem complicado, muito dessa complicação se deve a complexidade da organiazação das informações e etc
 
-Esta biblioteca que implementa os padrões definidos no `taok-collector-api`, tentará ajudar desenvolvedores a consumir dados abertos de qualquer município do Brasil.
+Esta biblioteca que implementa os padrões definidos no `taok-collector-api` tentará ajudar desenvolvedores a consumir dados abertos de qualquer município do Brasil.
 
 
 ## Como instalar?
@@ -32,7 +32,7 @@ Incluir trecho abaixo no pom.xml
 
 ## Como usar?
 
-Para usar teremos que criar um objeto `Search` e informar os parâmetros que desejaremos usar para buscar informações na API das prefeituras.
+Para usar teremos que criar um objeto `Search` e informar os parâmetros que desejaremos usar na busca das informações na API das prefeituras.
 
 **Parêmetros**
 
@@ -42,9 +42,10 @@ Para usar teremos que criar um objeto `Search` e informar os parâmetros que des
 
 Vamos usar como exemplo, obter dados do portal da transparência da prefeitura de fortaleza:
 
-- Vamos criar um `Provider` da chamado Cagece
+- Vamos criar um `Provider` chamado Cagece (Compania de Água e esgoto do estado do CE)
 
 ```java
+
 Provider cagece = new Provider() {
 			
   @Override
@@ -60,7 +61,7 @@ Provider cagece = new Provider() {
 
 ```
 
-Vamos criar 2 datas para usarmos como período para obtermos os dados
+Vamos criar 2 datas para usarmos como período.
 
 ```java
 LocalDate startDate = LocalDate.of(2019, 7, 1);
