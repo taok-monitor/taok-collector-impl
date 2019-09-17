@@ -2,7 +2,7 @@
 
 ## Padronizar Consumo de API do Portal da Transparência
 
-Hoje para consumirmos dados do portal da transparência e bem complicado, muito dessa complicação se deve a complexidade da organiazação das informações e etc
+Hoje para consumirmos dados do portal da transparência e bem complicado, muito dessa complicação se deve a complexidade da organização das informações e etc
 
 Esta biblioteca que implementa os padrões definidos no `taok-collector-api` tentará ajudar desenvolvedores a consumir dados abertos de qualquer município do Brasil.
 
@@ -32,7 +32,7 @@ Incluir trecho abaixo no pom.xml
 
 Para usar teremos que criar um objeto `Search` e informar os parâmetros que desejaremos usar na busca das informações na API das prefeituras.
 
-**Parêmetros**
+**Parâmetros**
 
 - Provider
 - StartDate
@@ -40,7 +40,7 @@ Para usar teremos que criar um objeto `Search` e informar os parâmetros que des
 
 Vamos usar como exemplo obter dados do portal da transparência da prefeitura de fortaleza:
 
-- Vamos criar um `Provider` chamado Cagece (Compania de Água e esgoto do estado do CE)
+- Vamos criar um `Provider` chamado Cagece (Companhia de Água e esgoto do estado do CE)
 
 ```java
 
@@ -72,7 +72,7 @@ Agora vamos criar nosso objeto `Search`
 Search search = new Search(startDate, endDate, cagece, null);
 ```
 
-Com esse objeto pronto podemos usar um dos `Collectors` disponiveis, nesse exemplo vamo usar Prefeitura de Fortaleza.
+Com esse objeto pronto podemos usar um dos `Collectors` disponíveis, nesse exemplo vamo usar Prefeitura de Fortaleza.
 
 ```java
 Collector collector =  new CeFortalezaCollector();
