@@ -1,7 +1,5 @@
 # Taok-collector
 
----
-
 ## Padronizar Consumo de API do Portal da Transparência
 
 Hoje para consumirmos dados do portal da transparência e bem complicado, muito dessa complicação se deve a complexidade da organiazação das informações e etc
